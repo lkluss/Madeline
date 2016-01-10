@@ -6,6 +6,10 @@
 \newcommand{\BibTeX}{{\sc Bib}\TeX} 
 \usepackage{graphicx}
 \usepackage{amsfonts}
+
+\usepackage{subfig}
+\usepackage{float}
+
 \setlength{\textheight}{21cm}
 
 \title{{\bf Zadanie nr 1 - Sieć MADALINE do rozpoznawania znaków}\linebreak
@@ -22,12 +26,18 @@ Obliczenia Inteligentne}
 Celem Zadania 1 było poznanie zastosowania sieci neuronowych. W tym celu utworzono program, który implementuje sieć MADALINE do rozpoznawania znaków. 
 
 \section{Metoda}
-Do realizacji zadania przygotowano 20 wzorów o rozdzielczo
+Do realizacji zadania przygotowano 20 wzorów o rozdzielczoci 4 x 4. 
 
-%\section{Eksperymenty i wyniki}
-%
-%Opis wykonywanych eksperyment�w. Wymagane jest ilustrowanie przeprowadzanych do�wiadcze� wykresami oraz tabelami.
-%
+\section{Eksperymenty}
+Do uczenia sieci wykorzystanio poniższe znaki:
+\begin{figure}[H]%
+\centering
+\subfloat{\label{trainPattern}
+\includegraphics{trainPatterns.png}}
+\caption{Lista wzorców treningowych}
+\end{figure}
+Do testowania wykorzystano następujące znaki:
+%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% PODROZDZIA� PT. EKSPERYMENT NR 1 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
