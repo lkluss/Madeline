@@ -88,12 +88,14 @@ public class App {
 			BufferedReader br = new BufferedReader(fr);
 			while ((line = br.readLine()) != null) {
 				String[] inputs = line.split(";");
+				if(inputs[0].equals("")) continue;
 				setNumber(patternNumbers, Integer.parseInt(inputs[0]));
 				PATTERN_LENGTH = Integer.parseInt(inputs[1]) * Integer.parseInt(inputs[2]);
 				for (int i = 0; i < getNumber(patternNumbers); i++) {
 					pattern.add(inputs[3 + i]);
 				}
 			}
+			br.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (NumberFormatException e) {
