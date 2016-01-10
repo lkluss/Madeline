@@ -1,0 +1,197 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{polski}
+%\usepackage[cp1250]{inputenc}
+\newcommand{\BibTeX}{{\sc Bib}\TeX} 
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\setlength{\textheight}{21cm}
+
+\title{{\bf Zadanie nr 1 - Sieć MADALINE do rozpoznawania znaków}\linebreak
+Obliczenia Inteligentne}
+\author{Ewelina Otto, Nr albumu \and Agnieszka Kluska, Nr albumu}
+\date{10.01.2016}
+
+\begin{document}
+\clearpage\maketitle
+\thispagestyle{empty}
+\newpage
+\setcounter{page}{1}
+\section{Cel zadania}
+Celem Zadania 1 było poznanie zastosowania sieci neuronowych. W tym celu utworzono program, który implementuje sieć MADALINE do rozpoznawania znaków. 
+
+\section{Metoda}
+Do realizacji zadania przygotowano 20 wzorów o rozdzielczo
+
+%\section{Eksperymenty i wyniki}
+%
+%Opis wykonywanych eksperyment�w. Wymagane jest ilustrowanie przeprowadzanych do�wiadcze� wykresami oraz tabelami.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PODROZDZIA� PT. EKSPERYMENT NR 1 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\subsection{Eksperyment nr 1}
+%
+%Eksperyment nr 1...\\
+%Identyczno�ciowa funkcja aktywacji ma posta�:
+%%\begin{equation}
+%% \forall\: s \in \mathbb{R}\:\:\:\: f(s) = s
+%% \label{r�wnanie funkcji identyczno�ciowej}
+%%\end{equation}
+%%Jak wida� z definicji (\ref{r�wnanie funkcji identyczno�ciowej}) funkcja ta...
+%
+%\subsubsection{Za�o�enia}
+%
+%\subsubsection{Przebieg}
+%\newpage
+%
+%\subsubsection{Rezultat}
+%
+%Rezultaty bada� eksperymentalnych przedstawione s� w Tab. \ref{wyniki eksperymentu pierwszego}.
+%\begin{table}[h!]
+% \caption{Rezultaty eksperymentu nr 1}
+% \centering
+% \vspace{0.2cm}
+% \begin{tabular}{c c c c}
+%  \hline\hline\\[-0.4cm]
+%  \textbf{Przypadek} & \textbf{Metoda 1} & \textbf{Metoda 2} & \textbf{Metoda 3}\\[0.1cm]
+%  \hline
+%  \textbf{1} & 50 & 837 & 970  \\
+%  \textbf{2} & 47 & 877 & 230  \\
+%  \textbf{3} & 31 &  25 & 415  \\
+%  \textbf{4} & 35 & 144 & 2356 \\
+%  \textbf{5} & 45 & 300 & 556  \\ [0.1cm]
+%  \hline
+% \end{tabular}
+% \label{wyniki eksperymentu pierwszego}
+%\end{table}
+%
+%\noindent Jak wida� w Tab. \ref{wyniki eksperymentu pierwszego}...\newline
+%Graficzna interpretacja wynik�w z Tab. \ref{wyniki eksperymentu pierwszego} 
+%przedstawiona jest na wykresie Rys. \ref{rysunek do eksperymentu pierwszego} gdzie mo�na zauwa�y�, �e...
+%\begin{figure}[h!]
+% \centering
+% \includegraphics[width=9.3cm]{wykres.pdf}
+% \vspace{-0.3cm}
+% \caption{Wykres dla wynik�w eksperymentu pierwszego}
+% \label{rysunek do eksperymentu pierwszego}
+%\end{figure}
+%
+%\noindent Jak wida� z wykresu Rys. \ref{rysunek do eksperymentu pierwszego}...\newline
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PODROZDZIA� PT. EKSPERYMENT NR 2 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\newpage
+%\subsection{Eksperyment nr 2}
+%
+%Eksperyment nr 2 polega� na...\\
+%Sigmoidalna funkcja aktywacji ma posta�:
+%\begin{equation}
+% \forall\: s \in \mathbb{R}\:\:\:\:\:\: f(s) = \frac{1}{\:\:\:1 + e^{-\beta \cdot s}\:}\:,
+% \:\:\:\:\textnormal{gdzie}\:\:\beta \in \mathbb{R}_{+}
+% \label{r�wnanie funkcji sigmoidalnej}
+%\end{equation}
+%%Jak wida� z r�wnania definicyjnego (\ref{r�wnanie funkcji sigmoidalnej}) 
+%funkcja\footnote{ang. \textit{sigmoidal function} lub \textit{unipolar function}}
+%ta ma wykres przedstawiony 
+%na rysunku Rys. \ref{funkcja sigmoidalna}, gdzie paramater $\beta$ ...
+%\begin{figure}[h!]
+% \centering
+% \includegraphics[width=7.3cm]{funkcja.png}
+% \vspace{-0.1cm}
+% \caption{Wykres funkcji sigmoidalnej}
+% \label{funkcja sigmoidalna}
+%\end{figure}
+%
+%\subsubsection{Za�o�enia}
+%
+%\subsubsection{Przebieg}
+%
+%\subsubsection{Rezultat}
+%
+%Rezultaty bada� eksperymentalnych przedstawione s� w Tab. \ref{wyniki eksperymentu drugiego}.
+%\vspace{-0.5cm}
+%\begin{table}[h!]
+% \caption{Rezultaty eksperymentu nr 2}
+% \centering
+% \vspace{0.2cm}
+% \begin{tabular}{c c c }
+%  \hline\hline\\[-0.4cm]
+%  \textbf{Przypadek} & \textbf{Metoda 1} & \textbf{Metoda 2}\\[0.1cm]
+%  \hline
+%  \textbf{1} & 50 & 837 \\
+%  \textbf{2} & 47 & 877 \\
+%  \textbf{3} & 45 & 300 \\ [0.1cm]
+%  \hline
+% \end{tabular}
+% \label{wyniki eksperymentu drugiego}
+%\end{table}
+%
+%\noindent Jak wida� w Tab. \ref{wyniki eksperymentu drugiego}...\newline
+%Wyniki w Tab. \ref{wyniki eksperymentu drugiego} �wiadcz� o tym, �e...
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PODROZDZIA� PT. EKSPERYMENT NR N 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\subsection{Eksperyment nr n}
+%Eksperyment nr n zak�ada�, i�...\\
+%Dla dowolnej liczby $N \in \mathbb{N}$ funkcj� 
+%$F_{N}:\mathbb{C}^{\:N}\!\rightarrow\mathbb{C}^{\:N}$
+%zdefiniowan� w nast�puj�cy spos�b:
+%\vspace{-0.4cm}
+%\begin{equation}
+% \forall\:\mathbf{x} \in \mathbb{C}^{\:N}\:\:\:\:\:
+% \forall\:k \in \{\:0,\dots,N - 1\:\!\}\:\:\:\:\:
+% F_{N}\:\!(\:\mathbf{x}\:)_{k}\:\stackrel{\Delta}{=}\:
+% \frac{1}{\sqrt{N}}\:
+% \sum_{n = 0}^{N - 1}\:x_{n}\:\cdot\:
+% e^{-j 2 \pi n k / N}
+% \label{r�wnanie dyskretnej transformaty Fouriera}
+%\end{equation}
+%nazywamy $N$ -- punktowym prostym jednowymiarowym dyskretnym przekszta�ceniem Fouriera.
+%Na Rys. \ref{FFT} przedstawiono szybki algorytm obliczania dyskretnego 
+%przekszta�cenia Fouriera\footnote{ang. \textit{Fast Fourier Transform}}.
+%\begin{figure}[h!]
+% \centering
+% \includegraphics[width=0.8\linewidth]{transformata.pdf}
+% \vspace{-0.1cm}
+% \caption{Szybkie przekszta�cenie Fouriera}
+% \label{FFT}
+%\end{figure}
+%
+%\subsubsection{Założenia}
+%
+%\subsubsection{Przebieg}
+%
+%\subsubsection{Rezultat}
+%\newpage
+%
+%\section{Wnioski}
+%
+%Wnioski z przeprowadzonych eksperymentów dowodzą, że...
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PODROZDZIA� PT. ZALACZNIKI
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Za��czniki*}
+%
+%Opcjonalnie, w zale�no�ci od zadania,
+%np. fragment kodu �r�d�owego.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BIBLIOGRAFIA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\renewcommand\refname{Bibliografia}
+%\bibliographystyle{plain}
+%\bibliography{bibliografia_wzor}
+
+\end{document}

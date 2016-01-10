@@ -35,13 +35,13 @@ public class Neuron {
 		this.activationFunction = activationFunction;
 	}
 
-	public double calculateOutput() {
-
+	public double calculateOutput() {		
+		
 		if (input.size() != weights.size()) {
 			throw new RuntimeException("Error: wrong input list provided.\n" + "Neuron expects " + weights.size()
 					+ " inputs.\n" + input.size() + " given.");
 		}
-
+		
 		double netInput = calculateWeightedSum(input);
 		return activationFunction.calculateOutput(netInput);
 
@@ -69,6 +69,21 @@ public class Neuron {
 
 	}
 
+	public void presentInputs() {
+
+		String printable = "INPUTS: ";
+
+		for (Double input : input) {
+			printable += input + ", ";
+		}
+
+		String substr = printable.substring(0, printable.length() - 1);
+
+		System.out.println(substr);
+
+	}
+
+	
 	public List<Double> getInput() {
 		return input;
 	}
@@ -90,11 +105,5 @@ public class Neuron {
 		this.id = id;
 	}
 
-	public void normalize(int ones) {
-		for (int i = 0; i < input.size(); i++) {
-			this.getWeights().set(i, input.get(i) / ones);
-		}
-
-	}
 
 }

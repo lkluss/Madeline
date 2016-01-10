@@ -9,7 +9,6 @@ public class Pattern {
 	}
 
 	public Pattern() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public List<Double> getInputs() {
